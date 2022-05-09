@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  background: linear-gradient(rgb(236, 240, 236), rgba(230, 228, 228, 0.288)),
+    url("https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
 .App-logo {

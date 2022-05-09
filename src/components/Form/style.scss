@@ -1,0 +1,63 @@
+.Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: rgba(128, 15, 109, 0.623);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+  }
+
+  form {
+    padding: 20px;
+    background: rgba(247, 231, 231, 0.51);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+    -webkit-backdrop-filter: blur(2.8px);
+    border: 1px solid rgba(246, 203, 203, 0.28);
+    margin: 10px;
+
+    h1 {
+      color: rgba(128, 15, 109, 0.623);
+      text-align: center;
+    }
+  }
+}
+
+.FormInput {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+
+  input {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+  }
+
+  input:invalid[focused="true"] {
+    border: 1px solid red;
+  }
+
+  input:invalid[focused="true"] ~ span {
+    display: block;
+  }
+  label {
+    color: grey;
+    font-size: 13px;
+  }
+  span {
+    color: rgb(238, 22, 22);
+    font-size: 12px;
+    display: none;
+  }
+}
